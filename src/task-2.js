@@ -5,24 +5,19 @@ const users = [
   { name: 'Lux', active: false },
 ];
 
-const toggleUserState = (allUsers, userName, callback) => {
-  const updatedUsers = allUsers.map(user =>
+const toggleUserState = (allUsers, userName,) => {
+    return new Promise(resolve=>{const updatedUsers = allUsers.map(user =>
     user.name === userName ? { ...user, active: !user.active } : user,
-  );
+    );
+     resolve(updatedUsers);})
+  
 
-  callback(updatedUsers);
 };
 
-const logger = updatedUsers => console.table(updatedUsers);
+const logger1 = updatedUsers => console.table(updatedUsers);
 
-/*
- * Сейчас работает так
- */
-toggleUserState(users, 'Mango', logger);
-toggleUserState(users, 'Lux', logger);
-
-/*
- * Должно работать так
- */
-toggleUserState(users, 'Mango').then(logger);
-toggleUserState(users, 'Lux').then(logger);
+const onTask2 = () => {
+  
+toggleUserState(users, 'Mango').then(logger1);
+toggleUserState(users, 'Lux').then(logger1);
+}
