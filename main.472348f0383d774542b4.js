@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{"0Xd1":function(n,e){const o=n=>new Promise(e=>{setTimeout(()=>e(n),n)}),t=n=>console.log(`Resolved after ${n}ms`);o(2e3).then(t),o(1e3).then(t),o(1500).then(t)},"2dqR":function(n,e){},L1EO:function(n,e,o){},QfWi:function(n,e,o){"use strict";o.r(e);o("L1EO"),o("0Xd1"),o("nhEl"),o("2dqR")},nhEl:function(n,e){}},[["QfWi",1]]]);
-//# sourceMappingURL=main.472348f0383d774542b4.js.map
